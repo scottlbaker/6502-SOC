@@ -43,6 +43,21 @@ RESET      N3 -pullup yes
 CLK        J3 -pullup yes
 ```
 
+## Memory Map
+
+The memory map of this SOC is as follows:
+```
+$0000 -> $00FF  Zero Page RAM (256-bytes)
+$0100 -> $01FF  Stack RAM (256-bytes)
+$0200 -> $0207  UART registers
+$0208 -> $020B  Timer registers
+$020C           Output port register
+$020D           Interrupt mask register
+$020E -> 020F   Random number registers
+$0210           Interrupt source register
+$F000 -> $FFFF  Boot RAM (4k-bytes)
+```
+
 ## 6502 CPU Background Info
 
 The 6502 was a highly successful 8-bit microprocessor design first introduced in 1975 by MOS Technology. The 6502 has ties to the Motorola 6800 as key members of the 6800 design team formed the core of the 6502 design team. The strength of the 6502 architecture lies in its small size and simple instruction set, coupled with flexible addressing modes. When it was introduced, the 6502 was much cheaper than its competitors and as a result the 6502 was designed into many early computers and game consoles including the first Apple computers.
