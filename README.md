@@ -53,7 +53,7 @@ $0200 -> $0207  UART registers
 $0208 -> $020B  Timer registers
 $020C           Output port register
 $020D           Interrupt mask register
-$020E -> 020F   Random number registers
+$020E -> $020F  Random number registers
 $0210           Interrupt source register
 $F000 -> $FFFF  Boot RAM (4k-bytes)
 ```
